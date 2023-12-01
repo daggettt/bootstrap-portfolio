@@ -1,0 +1,17 @@
+/* Normal Grid */
+
+body {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, #c2cAd0 1px, transparent 1px),
+    linear-gradient(to bottom, #c2cAd0 1px, transparent 1px);
+
+  background-color: rgb(246, 238, 226);
+}
+
+/* Dotted Grid 
+
+body {
+  background-size: 40px 40px;
+  background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+}*/
