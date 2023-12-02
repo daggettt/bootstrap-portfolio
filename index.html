@@ -16,9 +16,7 @@
     <nav class="navbar navbar-expand-md navbar-light sticky-top">
       <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
-          <span class="fw-bold text-secondary">
-            Rebecca L. Daggett
-          </span>
+          <img src="assets/minilogo.png" alt="Logo" id="flower-logo" class="img-fluid" style="width: 3rem">
         </a>
         
         <!--toggle button for mobile-->
@@ -54,8 +52,8 @@
             <!--Tooltips-->
             <span class="tt" data-bs-placement="bottom" title="Resume Download">
               <li class="nav-item ms-2 d-none d-md-inline">
-                <a href="" class="btn btn-secondary" role="button" type="download">
-                  <i class="fa-solid fa-file-arrow-down"></i>
+                <a href="" class="btn btn-primary" role="button" type="download">
+                  <i class="bi bi-download fs-6"></i>
                 </a>
               </li>
             </span>
@@ -184,7 +182,7 @@
           
           <!--Position 1-->
           <div class="col">
-            <div class="card h-100">
+            <div class="card border-0">
               <div class="card-body text-center py-4">
                 <h4 class="card-title">St. Leonard's Society of Canada</h4>
                 <p class="lead card-subtitle">2023 to Present</p>
@@ -203,7 +201,7 @@
   
           <!--Position 2-->
           <div class="col">
-            <div class="card border-0 h-100">
+            <div class="card border-0">
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Otherwise Studios</h4>
                 <p class="lead card-subtitle">2023</p>
@@ -222,7 +220,7 @@
 
           <!--Position 3-->
           <div class="col">
-            <div class="card border-0 h-100">
+            <div class="card border-0">
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Art Gallery of Guelph</h4>
                 <p class="lead card-subtitle">2014 to 2022</p>
@@ -239,9 +237,6 @@
               </div>
             </div>
           </div>
-  
-          
-  
         </div>
   
       </div>
@@ -253,6 +248,33 @@
     <!--Contact Section-->
     <section id="contact"></section>
 
+    <!--Footer-->
+    <div class="container-fluid bg-lime position-absolute ">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-primary">© 2023 Rebecca L. Daggett</p>
+        <a href="#intro" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0">
+          <img src="assets/minilogo.png" alt="Logo" id="flower-logo" class="img-fluid" style="width: 3rem">
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script>
     const tooltips = document.querySelectorAll('.tt')
@@ -260,5 +282,5 @@
       new bootstrap.Tooltip(t)
     })
   </script>
-</body>~
+</body>
 </html>
