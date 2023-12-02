@@ -3,10 +3,10 @@
 body {
   background-size: 40px 40px;
   background-image:
-    linear-gradient(to right, #c2cAd0 1px, transparent 1px),
-    linear-gradient(to bottom, #c2cAd0 1px, transparent 1px);
+    linear-gradient(to right, #d5dce4 1px, transparent 1px),
+    linear-gradient(to bottom, #d5dce4 1px, transparent 1px);
 
-  background-color: rgb(246, 238, 226);
+  background-color: #F7F2F0;
 }
 
 /* Dotted Grid 
