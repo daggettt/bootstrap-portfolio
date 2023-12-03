@@ -1,6 +1,9 @@
 // custom variables
 $primary : #1B4079;
-$secondary: #BDD359;
+$secondary: #42788A;
+$primary-emphasis: #091540;
+
+$card-height: 100%
 
 
 //import the functions & variables
@@ -10,11 +13,11 @@ $secondary: #BDD359;
 
 $custom-theme-colors : (
 
-  "stone" : #F7F2F0,
+  "stone" : #FDFCFC,
   "powder" : #d5dce4,
   "lime" : #BDD359,
   "sky" : #8dafe5,
-  "cta" : #ECBC02,
+  "cta" : #F05400,
 
 );
 

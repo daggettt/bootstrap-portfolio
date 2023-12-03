@@ -31,19 +31,19 @@
         id="main-nav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#about" class="nav-link text-secondary font-monospace">About</a>
+              <a href="#about" class="nav-link text-primary font-monospace">About</a>
             </li>
             <li class="nav-item">
-              <a href="#experience" class="nav-link text-secondary font-monospace">Experience</a>
+              <a href="#experience" class="nav-link text-primary font-monospace">Experience</a>
             </li>
             <li class="nav-item">
-              <a href="#skills" class="nav-link text-secondary font-monospace">Skills</a>
+              <a href="#skills" class="nav-link text-primary font-monospace">Skills</a>
             </li>
             <li class="nav-item">
-              <a href="#projects" class="nav-link text-secondary font-monospace">Projects</a>
+              <a href="#projects" class="nav-link text-primary font-monospace">Projects</a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link text-secondary font-monospace">Contact</a>
+              <a href="#contact" class="nav-link text-primary font-monospace">Contact</a>
             </li>
             <li class="nav-item d-md-none">
               <a href="" class="nav-link text-secondary font-monospace">CV</a>
@@ -51,8 +51,8 @@
             
             <!--Tooltips-->
             <span class="tt" data-bs-placement="bottom" title="Resume Download">
-              <li class="nav-item ms-2 d-none d-md-inline">
-                <a href="" class="btn btn-secondary" role="button" type="download">
+              <li class="nav-item ms-2 d-none d-md-inline ">
+                <a href="" class="btn btn-cta" role="button" type="download">
                   <i class="bi bi-download fs-6"></i>
                 </a>
               </li>
@@ -72,14 +72,14 @@
         <!--Left Side-->
         <div class="col-md-5 text-center text-md-start">
           <h1>
-            <div class="fs-5 fw-normal font-monospace text-sky p-1">Hi! I'm</div>
-            <div class="display-2">Rebecca Daggett</div>
-            <div class="display-5 text-muted">Full-stack developer</div>
+            <div class="fs-6 fw-normal font-monospace text-secondary px-1 py-4">Hi! I'm</div>
+            <div class="display-3 text-primary-emphasis fw-bold">Rebecca Daggett</div>
+            <div class="display-5 text-primary">Full-stack developer</div>
           </h1>
-          <p class="lead my-4 text-muted font-monospace">I build responsive & accessible web solutions.</p>
+          <p class="lead pb-5 text-secondary font-monospace ">I build responsive & accessible web solutions.</p>
           
           <!--CV Download-->
-          <a href="#" class="btn btn-primary" role="button" type="download">
+          <a href="#" class="btn btn-cta text-stone my-6" role="button" type="download">
             <i class="bi bi-download fs-4 font-monospace">&nbsp;Resume</i>
           </a>
           <!--Socials-->
@@ -87,12 +87,12 @@
             <ul class="list-inline">
               <li class="list-inline-item ">
                 <a href="https://www.linkedin.com/in/rebecca-l-daggett/" >
-                  <i class="bi bi-linkedin fs-1 text-secondary"></i>
+                  <i class="bi bi-linkedin fs-1 text-primary"></i>
                 </a>
               </li>
               <li class="list-inline-item px-3">
                 <a href="https://github.com/daggettt">
-                  <i class="bi bi-github fs-1 text-secondary"></i>
+                  <i class="bi bi-github fs-1 text-primary"></i>
                 </a>
               </li>
             </ul>
@@ -101,7 +101,9 @@
         </div>
         <!--Right Side-->
         <div class="col-md-5 text-center d-none d-md-block">
-          <img class="img-fluid" src="assets/forgetmenotlogo.png" alt="illustrated flower">
+          <div class="container">
+            <img class="img-fluid" src="assets/forgetmenotlogo.png" id="hero-image" alt="illustrated flower">
+          </div>
         </div>
       </div>
       </div>
@@ -111,8 +113,8 @@
     <section id="about" class="mt-5">
       <div class="container-lg bg-sky p-5 rounded-3">
         <div class="text-center">
-          <h2>About Me</h2>
-          <p class="lead text-muted font-monospace">From art historian to web wizard.</p>
+          <h2 class="text-primary-emphasis">About Me</h2>
+          <p class="lead text-primary font-monospace">From art historian to web wizard.</p>
         </div>
         <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
           <!--Left: Icons -->
@@ -121,7 +123,7 @@
               <!--Design-->
               <div class="col d-flex flex-column gap-2">
                 <div class="feature-icon-small d-inline-flex align-items-center justify-content-start fs-4">
-                  <button class="btn btn-outline-primary rounded-5 border border-2">
+                  <button class="btn btn-outline-cta rounded-5 border border-2">
                     <i class="bi bi-palette text-stone rounded-5 fs-4"></i>
                   </button>
                 </div>
@@ -131,7 +133,7 @@
               <!--Development-->
               <div class="col d-flex flex-column gap-2">
                 <div class="feature-icon-small d-inline-flex align-items-center justify-content-start fs-4">
-                  <button class="btn btn-outline-primary rounded-5 border border-2">
+                  <button class="btn btn-outline-cta rounded-5 border border-2">
                     <i class="bi bi-file-earmark-code text-stone rounded-5 fs-4"></i>
                   </button> 
                 </div>
@@ -141,7 +143,7 @@
               <!--Administration-->
               <div class="col d-flex flex-column gap-2">
                 <div class="feature-icon-small d-inline-flex align-items-center justify-content-start fs-4">
-                  <button class="btn btn-outline-primary rounded-5 border border-2">
+                  <button class="btn btn-outline-cta rounded-5 border border-2">
                     <i class="bi bi-calendar-check text-stone rounded-5 fs-4"></i>
                   </button>
                 </div>
@@ -151,7 +153,7 @@
               <!--Software-->
               <div class="col d-flex flex-column gap-2">
                 <div class="feature-icon-small d-inline-flex align-items-center justify-content-start fs-4">
-                  <button class="btn btn-outline-primary rounded-5 border border-2">
+                  <button class="btn btn-outline-cta rounded-5 border border-2">
                     <i class="bi bi-tools text-stone rounded-5 fs-4"></i>
                   </button>
                 </div>
@@ -250,7 +252,7 @@
     <!--Skills Section-->
     <section id="skills" class="mt-5">
       <div class="container-lg bg-sky p-5 rounded-3">
-        <div class="text-center">
+        <div class="text-center text-primary">
           <h2>Skills</h2>
           <p class="lead text-muted font-monospace">Mastering every stage of project developement.</p>
         </div>
@@ -317,11 +319,11 @@
 
     <!--Contact Section-->
     <section id="contact" class="mt-5">
-      <div class="container-lg">
-        <div class="text-center">
+      <div class="container-lg w-50">
+        <div class="text-center ">
           <h2>Get in Touch <i class="bi bi-chat-dots text-sky p-2"></i></h2>
           <p class="lead text-muted font-monospace">I'm always looking for new opportunities! Whether you have a project idea, or just want to connect, my inbox is always open.</p>
-          <button class="btn btn-primary" type="email"><i class="bi bi-envelope fs-3"></i></button>
+          <button class="btn btn-cta" type="email"><i class="bi bi-envelope fs-3"></i></button>
         </div>
 
 
@@ -330,25 +332,25 @@
 
     <!--Footer-->
     <div class="container-fluid bg-powder position-absolute mt-5">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-sky">© 2023 Rebecca L. Daggett</p>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-sky">
+        <p class="col-md-4 mb-0 text-primary">© 2023 Rebecca L. Daggett</p>
         <a href="#intro" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0">
           <img src="assets/minilogo.png" alt="Logo" id="flower-logo" class="img-fluid" style="width: 3rem">
         </a>
         <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item">
+          <li class="nav-item text-primary font-monospace">
             <a href="#about" class="nav-link">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item text-primary font-monospace">
             <a href="#experience" class="nav-link">Experience</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item text-primary font-monospace">
             <a href="#skills" class="nav-link">Skills</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item text-primary font-monospace">
             <a href="#projects" class="nav-link">Projects</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item text-primary font-monospace">
             <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
