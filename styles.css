@@ -16,6 +16,15 @@ body {
   background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
 }*/
 
+#experience {
+  
+
+  background-size: 30px 30px;
+  background-image: radial-gradient(circle, #d5dce4 1px, rgba(0, 0, 0, 0) 1px);
+
+  background-color: #8dafe5;
+}
+
 
 #flower-logo {
   animation: spin 8s infinite linear;

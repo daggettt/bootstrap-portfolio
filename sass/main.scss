@@ -1,5 +1,7 @@
 // custom variables
-$primary : #BDD359;
+$primary : #1B4079;
+$secondary: #BDD359;
+
 
 //import the functions & variables
 @import "../node_modules/bootstrap/scss/_functions";
@@ -7,13 +9,12 @@ $primary : #BDD359;
 
 
 $custom-theme-colors : (
-  "altlight": #B79CEE,
-  "altdark" : #7161F0,
 
   "stone" : #F7F2F0,
   "powder" : #d5dce4,
   "lime" : #BDD359,
   "sky" : #8dafe5,
+  "cta" : #ECBC02,
 
 );
 
