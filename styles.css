@@ -18,6 +18,10 @@ body {
 
 /* Animations */
 
+button:hover {
+  transform: scale(1.2);
+}
+
 #flower-logo {
   animation: spin 8s infinite linear;
 }
@@ -37,6 +41,12 @@ body {
 	img { width: 100%; height: auto; }
 }
 
+#contact-icon {
+  transform: translatey(0px);
+	animation: float 3.5s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
 @keyframes float {
   0% {
 		transform: translatey(0px);
@@ -48,5 +58,31 @@ body {
 		transform: translatey(0px);
 	}
 }
+
+.grow { 
+  transition: all .2s ease-in-out; 
 }
+  
+.grow:hover { 
+transform: scale(1.1); 
+}
+
+
+li {
+  width: fit-content;
+
+  background: linear-gradient(0deg, #8dafe5, #8dafe5) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+}
+li:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.underline {
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
+
 

@@ -13,7 +13,7 @@
 
     <!--Navigation-->
 
-    <nav class="navbar navbar-expand-md bg-stone sticky-top border-2 border-sky border-bottom">
+    <nav class="navbar navbar-expand-md bg-stone sticky-top border-2 border-sky border-opacity-50 border-bottom">
       <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
           <img src="assets/minilogo.png" alt="Logo" id="flower-logo" class="img-fluid" style="width: 3rem">
@@ -29,33 +29,35 @@
         <!--Navbar links-->
         <div class="collapse navbar-collapse justify-content-end align-center "
         id="main-nav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#about" class="nav-link text-primary font-monospace">About</a>
+          <ul class="navbar-nav ">
+            <li class="nav-item underline">
+              <a href="#about" class="nav-link text-primary font-monospace" data-replace="this link">About</a>
             </li>
-            <li class="nav-item">
-              <a href="#experience" class="nav-link text-primary font-monospace">Experience</a>
+            <li class="nav-item underline">
+              <a href="#experience" class="nav-link text-primary font-monospace" data-replace="this link">Experience</a>
             </li>
-            <li class="nav-item">
-              <a href="#skills" class="nav-link text-primary font-monospace">Skills</a>
+            <li class="nav-item underline">
+              <a href="#skills" class="nav-link text-primary font-monospace" data-replace="this link">Skills</a>
             </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link text-primary font-monospace">Projects</a>
+            <li class="nav-item underline">
+              <a href="#projects" class="nav-link text-primary font-monospace" data-replace="this link">Projects</a>
             </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link text-primary font-monospace">Contact</a>
+            <li class="nav-item underline">
+              <a href="#contact" class="nav-link text-primary font-monospace" data-replace="this link">Contact</a>
             </li>
             <li class="nav-item d-md-none">
-              <a href="" class="nav-link text-secondary font-monospace">CV</a>
+              <a href="" class="nav-link text-secondary font-monospace">Resume</a>
             </li>
             
             <!--Tooltips-->
             <span class="tt" data-bs-placement="bottom" title="Resume Download">
-              <li class="nav-item ms-2 d-none d-md-inline ">
+
+
+              <div class="nav-item ms-2 d-none d-md-inline ">
                 <a href="" class="btn btn-cta" role="button" type="download">
-                  <i class="bi bi-download fs-6"></i>
+                  <i class="bi bi-download fs-6 text-stone"></i>
                 </a>
-              </li>
+              </div>
             </span>
             
           </ul>
@@ -66,36 +68,34 @@
     </nav>
 
     <!--Intro Section-->
-    <section id="intro" class="p-5 mt-5">
+    <section id="intro" class="p-5 mt-4">
       <div class="container-lg">
         <div class="row justify-content-center align-items-center">
-        <!--Left Side-->
+        
+          <!--Left Side-->
         <div class="col-md-5 text-center text-md-start">
           <h1>
-            <div class="fs-6 fw-normal font-monospace text-secondary px-1 py-4">Hi! I'm</div>
+            <div class="fs-6 fw-normal font-monospace text-sky px-1 py-4">Hi! I'm</div>
             <div class="display-3 text-primary-emphasis fw-bold">Rebecca Daggett</div>
-            <div class="display-5 text-primary">Full-stack developer</div>
+            <div class="text-primary">Full-stack developer</div>
           </h1>
-          <p class="lead text-secondary font-monospace ">I build responsive & accessible web solutions.</p>
+          <p class="lead text-primary font-monospace">I build responsive & accessible web solutions.</p>
           <!--Socials-->
-          <div class="row justify-content-center text-start align-items-center pb-5">
-            <ul class="list-inline">
-              <li class="list-inline-item ">
-                <a href="https://www.linkedin.com/in/rebecca-l-daggett/" >
-                  <i class="bi bi-linkedin fs-2 text-primary"></i>
-                </a>
-              </li>
-              <li class="list-inline-item px-2">
-                <a href="https://github.com/daggettt">
-                  <i class="bi bi-github fs-2 text-primary"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-        <!--CV Download-->
-          <a href="#" class="btn btn-cta text-stone my-6 shadow-sm" role="button" type="download">
-            <i class="bi bi-download fs-4 font-monospace">&nbsp;Resume</i>
+          <div class="d-flex flex-row gap-4">
+            <div>
+              <a href="https://github.com/daggettt">
+                <i class="bi bi-github fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/rebecca-l-daggett/">
+                <i class="bi bi-linkedin fs-1"></i>
+              </a>
+            </div>
+          </div>          
+          <!--CV Download-->
+          <a href="./assets/RebeccaDaggett-Resume-2023.pdf" class="btn btn-cta text-stone shadow-sm my-5" role="button" type="download" download="RebeccaDaggett-CV">
+            <i class="bi bi-download fs-4 bold font-monospace">&nbsp;Resume</i>
           </a>
 
         </div>
@@ -171,13 +171,17 @@
           <!--Right: About Me description-->
           <div class="col d-flex flex-column align-items-end gap-2">
             <h2 class="fw-bold text-primary pb-4">I combine an affinity for design with a passion for programming. </h2>
-            <p class="text-body-primary fw-medium">With over a decade of professional experience in the visual culture sector, I can confidently say that I have a strong eye for aesthetics. 
-              This was true, even with my very first website, hand-coded with HTML in 2007. to facilitate web projects from ideation to implementation.
-              This unparalleled level of detail characterizes everything that I do, and is the perfect compliment 
-              This means my attention to detail is unparalleled, and my knowledge lends the perfect balance to web dev projects, allowing me to identify issues early on, strealminging workflow and exceeding project timelines. 
-              This unique skillset makes me a key developer/designer/problem-solver extraordinaire. 
+            <p class="text-body-primary fw-medium">
+              In 2007 I wrote my first line of &lt html &gt on the now deceased blog builder, <a href="https://en.wikipedia.org/wiki/Piczo>piczo.net" class="">piczo</a>.
+              Since then, I've gained over a decade of experience facilitating creative projects of all shapes and sizes, and have worked at every stage of development.
+              During this time I also got busy – I actively worked to improve my creative problem-solving, attention to detail, and project management skills.
             </p>
-            <p class="text-body-primary fw-medium">When I'm not busy working on web-related projects I like to spend my time drawing, knitting, reading high-fantasy novels or bird watching. </p>
+            <p class="text-body-primary fw-medium">
+              Now I'm a full-time web developer and I am constantly striving to build responsive and polished products.
+              I am quick to learn new technologies and explore new trends, and am always eager to grow my toolbox.
+              With expertise in design, UX strategy, front-end languages and frameworks, my work is characterized by strong aesthetics, engaging interfaces, and performance-optimized code.
+            </p>
+            <p class="text-body-primary fw-medium">When I'm not busy working on web-related projects I like to spend my time drawing, knitting, reading fantasy novels or bird watching. </p>
           </div>
           
         </div>
@@ -198,11 +202,12 @@
           <!--Position 1-->
           <div class="col">
             <div class="card border-2 border-powder shadow-sm">
-              <div class="card-body text-center py-4">
-                <h4 class="card-title text-primary">St. Leonard's Society of Canada</h4>
-                <p class="lead card-subtitle text-muted font-monospace fs-6">2023 to Present</p>
-                <h3 class="my-4 text-primary-emphasis fw-bold fs-2">Webmaster</h3>
-                <p class="card-text mx-5 text-muted d-lg-block">
+              <div class="card-body text-center p-4">
+                <h4 class="card-title text-primary fw-normal">St. Leonard's Society of Canada</h4>
+                <h3 class="mt-4 text-primary-emphasis fw-semibold fs-3">Webmaster</h3>
+                <p class=" card-subtitle text-muted font-monospace fs-6">2023 to Present</p>
+                
+                <p class="card-text mx-5 d-lg-block">
                   <div class="badge rounded-pill bg-cta">Figma</div>
                   <div class="badge rounded-pill bg-cta">HTML/CSS</div>
                   <div class="badge rounded-pill bg-cta">JavaScript</div>
@@ -210,7 +215,9 @@
                   <div class="badge rounded-pill bg-cta">WordPress</div>
                   <div class="badge rounded-pill bg-cta">Google Analytics</div>
                 </p>
-                <a href="https://stleonards.ca/" class="btn btn-outline-cta btn-md border-2 mt-3"><i class="bi bi-box-arrow-up-right text-primary"></i></a>
+                <div class="d-flex flex-row-reverse">
+                  <a href="https://stleonards.ca/" class=""><i class="bi bi-box-arrow-up-right text-cta fs-5"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -218,18 +225,21 @@
           <!--Position 2-->
           <div class="col">
             <div class="card border-2 border-powder shadow-sm">
-              <div class="card-body text-center py-4">
-                <h4 class="card-title text-primary">Otherwise Studios</h4>
-                <p class="lead card-subtitle text-muted font-monospace fs-6">2023</p>
-                <h3 class="my-4 text-primary-emphasis fw-bold fs-2">Web & Graphic Designer</h3>
-                <p class="card-text mx-5 text-muted d-lg-block">
+              <div class="card-body text-center p-4">
+                <h4 class="card-title text-primary fw-normal">Otherwise Studios</h4>
+                <h3 class="mt-4 text-primary-emphasis fw-semibold fs-3">Web & Graphic Designer</h3>
+                <p class="card-subtitle text-muted font-monospace fs-6">2023</p>
+                
+                <p class="card-text mx-5 d-lg-block">
                   <div class="badge rounded-pill bg-cta">Adobe Illustrator</div>
                   <div class="badge rounded-pill bg-cta">HTML/CSS</div>
                   <div class="badge rounded-pill bg-cta">MailChimp</div>
                   <div class="badge rounded-pill bg-cta">Adobe Photoshop</div>
                   <div class="badge rounded-pill bg-cta">Shopify CMS</div>
                 </p>
-                <a href="https://otherwisestudios.com/" class="btn btn-outline-cta btn-md border-2 mt-3"><i class="bi bi-box-arrow-up-right text-primary"></i></a>
+                <div class="d-flex flex-row-reverse">
+                  <a href="https://otherwisestudios.com/" class=""><i class="bi bi-box-arrow-up-right text-cta fs-5"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -237,11 +247,12 @@
           <!--Position 3-->
           <div class="col">
             <div class="card border-2 border-powder shadow-sm">
-              <div class="card-body text-center py-4">
-                <h4 class="card-title text-primary">Art Gallery of Guelph</h4>
-                <p class="lead card-subtitle text-muted font-monospace fs-6">2014 to 2022</p>
-                <h3 class="my-4 text-primary-emphasis fw-bold fs-2">Associate Registrar</h3>
-                <p class="card-text mx-5 text-muted d-lg-block">
+              <div class="card-body text-center p-4">
+                <h4 class="card-title text-primary fw-normal">Art Gallery of Guelph</h4>
+                <h3 class="mt-4 text-primary-emphasis fw-semibold fs-3">Associate Registrar</h3>
+                <p class="card-subtitle text-muted font-monospace fs-6">2014 to 2022</p>
+                
+                <p class="card-text mx-5 d-lg-block">
                   <div class="badge rounded-pill bg-cta">Adobe Acrobat</div>
                   <div class="badge rounded-pill bg-cta">Adobe Photoshop</div>
                   <div class="badge rounded-pill bg-cta">Blender</div>
@@ -249,7 +260,9 @@
                   <div class="badge rounded-pill bg-cta">SketchUp</div>
                   <div class="badge rounded-pill bg-cta">SQL</div>
                 </p>
-                <a href="https://artgalleryofguelph.ca/" class="btn btn-outline-cta btn-md border-2 mt-3"><i class="bi bi-box-arrow-up-right text-primary"></i></a>
+                <div class="d-flex flex-row-reverse">
+                  <a href="https://artgalleryofguelph.ca/" class=""><i class="bi bi-box-arrow-up-right text-cta fs-5"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -267,58 +280,59 @@
         </div>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
           <!--Design-->
-          <div class="feature col justify-content-center text-center">
+          <div class="feature col justify-content-center text-center ">
             <div class="feature-icon d-inline-flex align-items-center justify-content-center">
-              <button class="btn btn-outline-stone rounded border border-cta border-2 mb-3">
+              <button class="btn btn-outline-stone bg-stone rounded border border-cta border-2 mb-3">
                 <i class="bi bi-palette2 fs-1 text-cta"></i> 
               </button>
             </div>
             <h3 class="fs-2 text-body-emphasis">Design</h3>
-            <ul class="list-unstyled font-monospace">
-              <li>Logo & Branding</li>
-              <li>Wireframing & Prototyping</li>
-              <li>UX Design</li>
-              <li>Visual Design (UI)</li>
-              <li>Creative Direction</li>
-              <li>Product Design</li>
-              <li>Motion Design</li>
-              <li>Illustration</li>
+            <ul class="list-group justify-content-center font-monospace">
+              <li class="list-item underline d-inline-block text-center mx-auto">Logo & Branding</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">Wireframing & Prototyping</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">UX Design</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">Visual Design (UI)</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">Creative Direction</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">Product Design</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">Motion Design</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">Illustration</li>
             </ul>
           </div>
           <!--Development-->
           <div class="feature col justify-content-center text-center">
             <div class="feature-icon d-inline-flex align-items-center justify-content-center">
-              <button class="btn btn-outline-stone rounded border border-cta border-2 mb-3">
+              <button class="btn btn-outline-stone bg-stone rounded border border-cta border-2 mb-3">
                 <i class="bi bi-code-slash fs-1 text-cta"></i>
               </button>
             </div>
             <h3 class="fs-2 text-body-emphasis">Development</h3>
-            <ul class="list-unstyled font-monospace">
-              <li>HTML</li>
-              <li>CSS & SASS</li>
-              <li>JavaScript</li>
-              <li>ReactJS</li>
-              <li>Node.js</li>
-              <li>PHP</li>
-              <li>SQL</li>
+            <ul class="list-group justify-content-center font-monospace">
+              <li class="list-item underline d-inline-block text-center mx-auto">HTML</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">CSS & SASS</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">JavaScript</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">ReactJS</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">Git</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">Node.js</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">PHP</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">SQL</li>
             </ul>
           </div>
           <!--Software-->
           <div class="feature col justify-content-center text-center">
             <div class="feature-icon d-inline-flex align-items-center justify-content-center">
-              <button class="btn btn-outline-stone rounded border border-cta border-2 mb-3">
+              <button class="btn btn-outline-stone bg-stone rounded border border-cta border-2 mb-3">
                 <i class="bi bi-tools fs-1 text-cta"></i>
               </button>
             </div>
             <h3 class="fs-2 text-body-emphasis">Software</h3>
-            <ul class="list-unstyled font-monospace">
-              <li>Adobe Illustrator</li>
-              <li>Adobe Photoshop</li>
-              <li>Figma</li>
-              <li>hPanel</li>
-              <li>Sketch</li>
-              <li>LaTeX</li>
-              <li>Visual Studio Code</li>
+            <ul class="list-group justify-content-center font-monospace">
+              <li class="list-item underline d-inline-block text-center mx-auto">Adobe Illustrator</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">Adobe Photoshop</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">Figma</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">hPanel</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">Sketch</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">LaTeX</li>
+              <li class="list-item underline d-inline-block text-center mx-auto">Visual Studio Code</li>
             </ul>
           </div>
         </div>
@@ -328,36 +342,80 @@
 
     <!--Projects Section-->
     <section id="projects" class="mt-5">
-      <div class="container-lg bg-powder p-5 rounded-3 shadow">
+      <div class="container-lg p-5">
         <div class="text-center text-primary">
           <h2 class="text-primary-emphasis">Projects</h2>
-          <p class="lead text-primary font-monospace">Web development, brand strategy, and product design.</p>
+          <p class="lead text-primary font-monospace">Developing user-friendly solutions.</p>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-3">
+        <!-- Cards -->
+        <div class="row py-5 row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card h-100">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card h-100 border-2 border-powder shadow-sm">
+              <img src="./assets/slsc-pop-up-thumb.PNG" class="card-img-top" alt="A pop-up feature.">
               <div class="card-body">
-                <h5 class="card-title">Fundraising Campaign</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title text-primary fw-bold">Custom Layouts & Components</h5>
+                <p class="card-text">
+                  As the Webmaster, I have supported several organization initiatives, including fundraising campaigns and publications.
+                  In this example, I created custom code for an alert banner and pop-up to increase engagement and conversions with the recent campaign.
+                  This project is ongoing. 
+                </p>
+                <p class="card-text mx-5 text-muted d-lg-block">
+                  <div class="badge rounded-pill bg-cta">WordPress</div>
+                  <div class="badge rounded-pill bg-cta">Google Analytics</div>
+                  <div class="badge rounded-pill bg-cta">Digital Marketing</div>
+                  <div class="badge rounded-pill bg-cta">Custom Hooks</div>
+                  <div class="badge rounded-pill bg-cta">User Experience</div>
+                  <div class="badge rounded-pill bg-cta">Brand Identity</div>
+                  <div class="badge rounded-pill bg-cta">Design</div>
+                </p>
+              </div>
+              <div class="card-footer bg-stone text-end">
+                <a href="https://www.figma.com/file/Gh9qr5L4pzNes31vZg2Z6d/SLSC-Fundraiser-Page?type=design&node-id=2%3A55&mode=design&t=z476drw1Qu8Iu16W-1" class="card-link font-monospace text-cta">Wireframe</a>
+                <a href="https://stleonards.ca/commitment-to-community-fundraiser/" class="card-link font-monospace text-cta">Live Site</a>
               </div>
             </div>
           </div>
+          
           <div class="col">
-            <div class="card h-100">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card h-100 border-2 border-powder shadow-sm">
+              <img src="./assets/Otherwise Business Card in Women Hand Mockup.png" class="card-img-top" alt="A hand holding a business card.">
               <div class="card-body">
-                <h5 class="card-title">Brand Identity</h5>
-                <p class="card-text">This is a short card.</p>
+                <h5 class="card-title text-primary fw-bold">Branding & Asset Optimization</h5>
+                <p class="card-text">This was a client project that focused on enhancing the brand identity of Otherwise Studios, an inclusive makers space located in Guelph, Ontario.</p>
+                <p class="card-text mx-5 text-muted d-lg-block">
+                  <div class="badge rounded-pill bg-cta">Logo Design</div>
+                  <div class="badge rounded-pill bg-cta">Brand Development</div>
+                  <div class="badge rounded-pill bg-cta">Web Design</div>
+                  <div class="badge rounded-pill bg-cta">Email Marketing</div>
+                  <div class="badge rounded-pill bg-cta">SEO</div>
+                  <div class="badge rounded-pill bg-cta">Design & Illustration</div>
+                </p>
+              </div>
+              <div class="card-footer bg-stone text-end">
+                <a href="https://rebeccadaggett.ca/illustrations" class="card-link font-monospace text-cta">Case Study</a>
+                <a href="https://otherwisestudios.com/" class="card-link font-monospace text-cta">Live Site</a>
               </div>
             </div>
           </div>
+
           <div class="col">
-            <div class="card h-100">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card h-100 border-2 border-powder shadow-sm">
+              <img src="./assets/Astearia Metal Box Mockups.png" class="card-img-top" alt="Tin of loose leaf tea">
               <div class="card-body">
-                <h5 class="card-title">This Site</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title text-primary fw-bold">Digital Marketing Strategy</h5>
+                <p class="card-text">This project challenged me to work as the creative lead of an online business. I needed to design a logo, landing page, social media strategy, and an email campaign.</p>
+                <p class="card-text mx-5 text-muted d-lg-block">
+                  <div class="badge rounded-pill bg-cta">Brand Identity</div>
+                  <div class="badge rounded-pill bg-cta">Logo Design</div>
+                  <div class="badge rounded-pill bg-cta">Copywriting</div>
+                  <div class="badge rounded-pill bg-cta">Web Design</div>
+                  <div class="badge rounded-pill bg-cta">Email Marketing</div>
+                  <div class="badge rounded-pill bg-cta">Product Design</div>
+                  <div class="badge rounded-pill bg-cta">Design & Illustration</div>
+                </p>
+              </div>
+              <div class="card-footer bg-stone text-end">
+                <a href="https://rebeccadaggett.ca/astearia" class="card-link font-monospace text-cta">Case Study</a>
               </div>
             </div>
           </div>
@@ -366,12 +424,17 @@
     </section>
 
     <!--Contact Section-->
-    <section id="contact" class="mt-5">
+    <section id="contact" class="my-5">
       <div class="container-lg w-50">
-        <div class="text-center ">
-          <h2>Get in Touch <i class="bi bi-chat-dots text-sky p-2"></i></h2>
-          <p class="lead text-muted font-monospace">I'm always looking for new opportunities! Whether you have a project idea, or just want to connect, my inbox is always open.</p>
-          <button class="btn btn-cta" type="email"><i class="bi bi-envelope fs-3"></i></button>
+        <div class="text-center">
+          <div class="pb-4" id="contact-icon">
+            <i class="bi bi-chat-dots text-cta fs-2"></i>
+          </div>
+          <h2 class="text-primary-emphasis">Get in Touch!</h2>
+          <p class="lead text-primary font-monospace">I'm always looking for new opportunities! Whether you have a project idea, or just want to connect, <strong>my inbox is always open.</strong></p>
+          <a href="mailto:rebeccaldaggett@gmail.com">
+            <button class="btn btn-cta m-4" type="email"><i class="bi bi-envelope fs-3 text-stone"></i></button>
+          </a>
         </div>
 
 
@@ -381,24 +444,24 @@
     <!--Footer-->
     <div class="container-fluid bg-powder position-absolute mt-5">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-sky">
-        <p class="col-md-4 mb-0 text-primary">© 2023 Rebecca L. Daggett</p>
+        <p class="col-md-4 mb-0 text-light fs-6">© 2023 Rebecca L. Daggett</p>
         <a href="#intro" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0">
           <img src="assets/minilogo.png" alt="Logo" id="flower-logo" class="img-fluid" style="width: 3rem">
         </a>
         <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item text-primary font-monospace">
+          <li class="nav-item underline text-primary font-monospace">
             <a href="#about" class="nav-link">About</a>
           </li>
-          <li class="nav-item text-primary font-monospace">
+          <li class="nav-item underline text-primary font-monospace">
             <a href="#experience" class="nav-link">Experience</a>
           </li>
-          <li class="nav-item text-primary font-monospace">
+          <li class="nav-item underline text-primary font-monospace">
             <a href="#skills" class="nav-link">Skills</a>
           </li>
-          <li class="nav-item text-primary font-monospace">
+          <li class="nav-item underline text-primary font-monospace">
             <a href="#projects" class="nav-link">Projects</a>
           </li>
-          <li class="nav-item text-primary font-monospace">
+          <li class="nav-item underline text-primary font-monospace">
             <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
