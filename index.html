@@ -12,10 +12,9 @@
 <body>
 
     <!--Navigation-->
-
     <nav class="navbar navbar-expand-md bg-stone sticky-top border-2 border-sky border-opacity-50 border-bottom">
       <div class="container-xxl">
-        <a href="#intro" class="navbar-brand">
+        <a href="#intro" class="navbar-brand grow">
           <img src="assets/minilogo.png" alt="Logo" id="flower-logo" class="img-fluid" style="width: 3rem">
         </a>
         
@@ -46,15 +45,13 @@
               <a href="#contact" class="nav-link text-primary font-monospace" data-replace="this link">Contact</a>
             </li>
             <li class="nav-item d-md-none">
-              <a href="" class="nav-link text-secondary font-monospace">Resume</a>
+              <a href="./assets/RebeccaDaggett-Resume-2023.pdf" class="nav-link text-secondary font-monospace">Resume</a>
             </li>
             
             <!--Tooltips-->
             <span class="tt" data-bs-placement="bottom" title="Resume Download">
-
-
-              <div class="nav-item ms-2 d-none d-md-inline ">
-                <a href="" class="btn btn-cta" role="button" type="download">
+              <div class="nav-item ms-2 d-none d-md-inline grow">
+                <a href="./assets/RebeccaDaggett-Resume-2023.pdf" class="btn btn-cta" role="button" type="download">
                   <i class="bi bi-download fs-6 text-stone"></i>
                 </a>
               </div>
@@ -68,12 +65,11 @@
     </nav>
 
     <!--Intro Section-->
-    <section id="intro" class="p-5 mt-4">
-      <div class="container-lg">
+    <section id="intro" class="mt-4">
+      <div class="container-lg p-5" >
         <div class="row justify-content-center align-items-center">
-        
           <!--Left Side-->
-        <div class="col-md-5 text-center text-md-start">
+        <div class="col-md-6 text-center text-md-start">
           <h1>
             <div class="fs-6 fw-normal font-monospace text-sky px-1 py-4">Hi! I'm</div>
             <div class="display-3 text-primary-emphasis fw-bold">Rebecca Daggett</div>
@@ -82,27 +78,31 @@
           <p class="lead text-primary font-monospace">I build responsive & accessible web solutions.</p>
           <!--Socials-->
           <div class="d-flex flex-row gap-4">
-            <div>
-              <a href="https://github.com/daggettt">
-                <i class="bi bi-github fs-1"></i>
+            <div class="grow">
+              <a href="https://www.linkedin.com/in/rebecca-l-daggett/" class="">
+                <i class="bi bi-linkedin fs-2"></i>
               </a>
             </div>
-            <div>
-              <a href="https://www.linkedin.com/in/rebecca-l-daggett/">
-                <i class="bi bi-linkedin fs-1"></i>
+            <div class="grow">
+              <a href="https://github.com/daggettt" class="">
+                <i class="bi bi-github fs-2"></i>
+              </a>
+            </div>
+            <div class="grow">
+              <a href="https://www.instagram.com/r.daggett/" class="">
+                <i class="bi bi-instagram fs-2"></i>
               </a>
             </div>
           </div>          
           <!--CV Download-->
-          <a href="./assets/RebeccaDaggett-Resume-2023.pdf" class="btn btn-cta text-stone shadow-sm my-5" role="button" type="download" download="RebeccaDaggett-CV">
+          <a href="./assets/RebeccaDaggett-Resume-2023.pdf"  class="btn btn-cta text-stone shadow-sm my-5 grow" role="button" type="download" download="RebeccaDaggett-CV">
             <i class="bi bi-download fs-4 bold font-monospace">&nbsp;Resume</i>
           </a>
-
         </div>
         <!--Right Side-->
         <div class="col-md-5 text-center d-none d-md-block">
-          <div class="container">
-            <img class="img-fluid" src="assets/forgetmenotlogo.png" id="hero-image" alt="illustrated flower">
+          <div class="container grow">
+            <img class="w-75 img-fluid" src="assets/forgetmenotlogo.png" id="hero-image" alt="illustrated flower">
           </div>
         </div>
       </div>
@@ -110,21 +110,20 @@
     </section>
 
     <!--About Section-->
-    <section id="about" class="mt-5">
+    <section id="about" class="mt-5 pt-5">
       <div class="container-lg bg-powder p-5 rounded-3 shadow">
         <div class="text-center">
           <h2 class="text-primary-emphasis">About Me</h2>
           <p class="lead text-primary font-monospace">From art historian to web wizard.</p>
         </div>
         <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-          <!--Left: Icons -->
+          <!--Left -->
           <div class="col">
-            
             <div class="row row-cols-1 row-cols-sm-2 g-4">
               <!--Web management-->
               <div class="col d-flex flex-column">
                 <div class="feature-icon-small d-inline-flex align-items-center justify-content-start fs-4">
-                  <button class="btn btn-outline-cta bg-cta  rounded-5 border border-2">
+                  <button class="btn btn-outline-cta bg-cta grow rounded-5 border border-2">
                     <i class="bi bi-file-earmark-code text-stone rounded-5 fs-4"></i>
                   </button>
                 </div>
@@ -135,7 +134,7 @@
               <!--Masters-->
               <div class="col d-flex flex-column">
                 <div class="feature-icon-small d-inline-flex align-items-center justify-content-start fs-4">
-                  <button class="btn btn-outline-cta  bg-cta rounded-5 border border-2">
+                  <button class="btn btn-outline-cta grow bg-cta rounded-5 border border-2">
                     <i class="bi bi-easel text-stone rounded-5 fs-4"></i>
                   </button> 
                 </div>
@@ -146,7 +145,7 @@
               <!--Google-->
               <div class="col d-flex flex-column">
                 <div class="feature-icon-small d-inline-flex align-items-center justify-content-start fs-4">
-                  <button class="btn btn-outline-cta  bg-cta rounded-5 border border-2">
+                  <button class="btn btn-outline-cta grow bg-cta rounded-5 border border-2">
                     <i class="bi bi-graph-up-arrow text-stone rounded-5 fs-4"></i>
                   </button>
                 </div>
@@ -157,7 +156,7 @@
               <!---->
               <div class="col d-flex flex-column">
                 <div class="feature-icon-small d-inline-flex align-items-center justify-content-start fs-4">
-                  <button class="btn btn-outline-cta  bg-cta rounded-5 border border-2">
+                  <button class="btn btn-outline-cta grow bg-cta rounded-5 border border-2">
                     <i class="bi bi-palette text-stone rounded-5 fs-4"></i>
                   </button>
                 </div>
@@ -166,22 +165,21 @@
                 <p class="text-muted font-monospace">2013 - 2017</p>
               </div>
             </div>
-
           </div>
-          <!--Right: About Me description-->
+          <!--Right: description-->
           <div class="col d-flex flex-column align-items-end gap-2">
             <h2 class="fw-bold text-primary pb-4">I combine an affinity for design with a passion for programming. </h2>
-            <p class="text-body-primary fw-medium">
-              In 2007 I wrote my first line of &lt html &gt on the now deceased blog builder, <a href="https://en.wikipedia.org/wiki/Piczo>piczo.net" class="">piczo</a>.
+            <p class="text-body-primary fw-normal">
+              In 2007 I wrote my first line of &lthtml&gt on the now deceased blog builder, <a href="https://en.wikipedia.org/wiki/Piczo>piczo.net" class="">piczo</a>.
               Since then, I've gained over a decade of experience facilitating creative projects of all shapes and sizes, and have worked at every stage of development.
               During this time I also got busy – I actively worked to improve my creative problem-solving, attention to detail, and project management skills.
             </p>
-            <p class="text-body-primary fw-medium">
+            <p class="text-body-primary fw-normal">
               Now I'm a full-time web developer and I am constantly striving to build responsive and polished products.
               I am quick to learn new technologies and explore new trends, and am always eager to grow my toolbox.
               With expertise in design, UX strategy, front-end languages and frameworks, my work is characterized by strong aesthetics, engaging interfaces, and performance-optimized code.
             </p>
-            <p class="text-body-primary fw-medium">When I'm not busy working on web-related projects I like to spend my time drawing, knitting, reading fantasy novels or bird watching. </p>
+            <p class="text-body-primary fw-normal">When I'm not busy working on web-related projects I like to spend my time drawing, knitting, reading fantasy novels or bird watching. </p>
           </div>
           
         </div>
@@ -189,8 +187,8 @@
     </section>
 
     <!--Experience Section-->
-    <section id="experience" class="mt-5 py-5">
-      <div class="container-lg">
+    <section id="experience" class="mt-5 pt-5">
+      <div class="container-lg p-5">
         <div class="text-center pb-4">
           <h2 class="text-primary-emphasis">Selected Experience</h2>
           <p class="lead text-primary font-monospace">From art to tech, and everything in between.</p>
@@ -201,12 +199,11 @@
           
           <!--Position 1-->
           <div class="col">
-            <div class="card border-2 border-powder shadow-sm">
+            <div class="card border-2 border-powder shadow-sm grow">
               <div class="card-body text-center p-4">
                 <h4 class="card-title text-primary fw-normal">St. Leonard's Society of Canada</h4>
                 <h3 class="mt-4 text-primary-emphasis fw-semibold fs-3">Webmaster</h3>
                 <p class=" card-subtitle text-muted font-monospace fs-6">2023 to Present</p>
-                
                 <p class="card-text mx-5 d-lg-block">
                   <div class="badge rounded-pill bg-cta">Figma</div>
                   <div class="badge rounded-pill bg-cta">HTML/CSS</div>
@@ -216,7 +213,7 @@
                   <div class="badge rounded-pill bg-cta">Google Analytics</div>
                 </p>
                 <div class="d-flex flex-row-reverse">
-                  <a href="https://stleonards.ca/" class=""><i class="bi bi-box-arrow-up-right text-cta fs-5"></i></a>
+                  <a href="https://stleonards.ca/" class="grow"><i class="bi bi-box-arrow-up-right text-cta fs-5"></i></a>
                 </div>
               </div>
             </div>
@@ -224,12 +221,11 @@
   
           <!--Position 2-->
           <div class="col">
-            <div class="card border-2 border-powder shadow-sm">
+            <div class="card border-2 border-powder shadow-sm grow">
               <div class="card-body text-center p-4">
                 <h4 class="card-title text-primary fw-normal">Otherwise Studios</h4>
                 <h3 class="mt-4 text-primary-emphasis fw-semibold fs-3">Web & Graphic Designer</h3>
                 <p class="card-subtitle text-muted font-monospace fs-6">2023</p>
-                
                 <p class="card-text mx-5 d-lg-block">
                   <div class="badge rounded-pill bg-cta">Adobe Illustrator</div>
                   <div class="badge rounded-pill bg-cta">HTML/CSS</div>
@@ -238,7 +234,7 @@
                   <div class="badge rounded-pill bg-cta">Shopify CMS</div>
                 </p>
                 <div class="d-flex flex-row-reverse">
-                  <a href="https://otherwisestudios.com/" class=""><i class="bi bi-box-arrow-up-right text-cta fs-5"></i></a>
+                  <a href="https://otherwisestudios.com/" class="grow"><i class="bi bi-box-arrow-up-right text-cta fs-5"></i></a>
                 </div>
               </div>
             </div>
@@ -246,12 +242,11 @@
 
           <!--Position 3-->
           <div class="col">
-            <div class="card border-2 border-powder shadow-sm">
+            <div class="card border-2 border-powder shadow-sm grow">
               <div class="card-body text-center p-4">
                 <h4 class="card-title text-primary fw-normal">Art Gallery of Guelph</h4>
                 <h3 class="mt-4 text-primary-emphasis fw-semibold fs-3">Associate Registrar</h3>
                 <p class="card-subtitle text-muted font-monospace fs-6">2014 to 2022</p>
-                
                 <p class="card-text mx-5 d-lg-block">
                   <div class="badge rounded-pill bg-cta">Adobe Acrobat</div>
                   <div class="badge rounded-pill bg-cta">Adobe Photoshop</div>
@@ -261,7 +256,7 @@
                   <div class="badge rounded-pill bg-cta">SQL</div>
                 </p>
                 <div class="d-flex flex-row-reverse">
-                  <a href="https://artgalleryofguelph.ca/" class=""><i class="bi bi-box-arrow-up-right text-cta fs-5"></i></a>
+                  <a href="https://artgalleryofguelph.ca/" class="grow"><i class="bi bi-box-arrow-up-right text-cta fs-5"></i></a>
                 </div>
               </div>
             </div>
@@ -272,7 +267,7 @@
     </section>
 
     <!--Skills Section-->
-    <section id="skills" class="mt-5">
+    <section id="skills" class="mt-5 pt-5">
       <div class="container-lg bg-powder p-5 rounded-3 shadow">
         <div class="text-center text-primary">
           <h2 class="text-primary-emphasis">Skills</h2>
@@ -282,7 +277,7 @@
           <!--Design-->
           <div class="feature col justify-content-center text-center ">
             <div class="feature-icon d-inline-flex align-items-center justify-content-center">
-              <button class="btn btn-outline-stone bg-stone rounded border border-cta border-2 mb-3">
+              <button class="btn btn-outline-stone bg-stone grow rounded border border-cta border-2 mb-3">
                 <i class="bi bi-palette2 fs-1 text-cta"></i> 
               </button>
             </div>
@@ -301,7 +296,7 @@
           <!--Development-->
           <div class="feature col justify-content-center text-center">
             <div class="feature-icon d-inline-flex align-items-center justify-content-center">
-              <button class="btn btn-outline-stone bg-stone rounded border border-cta border-2 mb-3">
+              <button class="btn btn-outline-stone bg-stone grow rounded border border-cta border-2 mb-3">
                 <i class="bi bi-code-slash fs-1 text-cta"></i>
               </button>
             </div>
@@ -320,7 +315,7 @@
           <!--Software-->
           <div class="feature col justify-content-center text-center">
             <div class="feature-icon d-inline-flex align-items-center justify-content-center">
-              <button class="btn btn-outline-stone bg-stone rounded border border-cta border-2 mb-3">
+              <button class="btn btn-outline-stone bg-stone grow rounded border border-cta border-2 mb-3">
                 <i class="bi bi-tools fs-1 text-cta"></i>
               </button>
             </div>
@@ -341,7 +336,7 @@
     </section>
 
     <!--Projects Section-->
-    <section id="projects" class="mt-5">
+    <section id="projects" class="mt-5 pt-5">
       <div class="container-lg p-5">
         <div class="text-center text-primary">
           <h2 class="text-primary-emphasis">Projects</h2>
@@ -357,7 +352,7 @@
                 <p class="card-text">
                   As the Webmaster, I have supported several organization initiatives, including fundraising campaigns and publications.
                   In this example, I created custom code for an alert banner and pop-up to increase engagement and conversions with the recent campaign.
-                  This project is ongoing. 
+                  <strong>This project is ongoing.</strong> 
                 </p>
                 <p class="card-text mx-5 text-muted d-lg-block">
                   <div class="badge rounded-pill bg-cta">WordPress</div>
@@ -367,6 +362,7 @@
                   <div class="badge rounded-pill bg-cta">User Experience</div>
                   <div class="badge rounded-pill bg-cta">Brand Identity</div>
                   <div class="badge rounded-pill bg-cta">Design</div>
+                  <div class="badge rounded-pill bg-cta">Front-end Languages</div>
                 </p>
               </div>
               <div class="card-footer bg-stone text-end">
@@ -380,12 +376,15 @@
             <div class="card h-100 border-2 border-powder shadow-sm">
               <img src="./assets/Otherwise Business Card in Women Hand Mockup.png" class="card-img-top" alt="A hand holding a business card.">
               <div class="card-body">
-                <h5 class="card-title text-primary fw-bold">Branding & Asset Optimization</h5>
-                <p class="card-text">This was a client project that focused on enhancing the brand identity of Otherwise Studios, an inclusive makers space located in Guelph, Ontario.</p>
+                <h5 class="card-title text-primary fw-bold">Brand Development</h5>
+                <p class="card-text">This was a client project that focused on enhancing the brand identity of Otherwise Studios, an inclusive makers space located in Guelph, Ontario.
+                  It evolved to include updating digital and print assets.
+                </p>
                 <p class="card-text mx-5 text-muted d-lg-block">
                   <div class="badge rounded-pill bg-cta">Logo Design</div>
                   <div class="badge rounded-pill bg-cta">Brand Development</div>
                   <div class="badge rounded-pill bg-cta">Web Design</div>
+                  <div class="badge rounded-pill bg-cta">User Experience</div>
                   <div class="badge rounded-pill bg-cta">Email Marketing</div>
                   <div class="badge rounded-pill bg-cta">SEO</div>
                   <div class="badge rounded-pill bg-cta">Design & Illustration</div>
@@ -403,7 +402,7 @@
               <img src="./assets/Astearia Metal Box Mockups.png" class="card-img-top" alt="Tin of loose leaf tea">
               <div class="card-body">
                 <h5 class="card-title text-primary fw-bold">Digital Marketing Strategy</h5>
-                <p class="card-text">This project challenged me to work as the creative lead of an online business. I needed to design a logo, landing page, social media strategy, and an email campaign.</p>
+                <p class="card-text">As the capstone project for the Prepr micro-credential, this project challenged me to take on the role of a creative lead to design a logo, landing page, social media strategy, and an email campaign.</p>
                 <p class="card-text mx-5 text-muted d-lg-block">
                   <div class="badge rounded-pill bg-cta">Brand Identity</div>
                   <div class="badge rounded-pill bg-cta">Logo Design</div>
@@ -425,27 +424,24 @@
 
     <!--Contact Section-->
     <section id="contact" class="my-5">
-      <div class="container-lg w-50">
+      <div class="container-lg w-50 pb-5">
         <div class="text-center">
-          <div class="pb-4" id="contact-icon">
-            <i class="bi bi-chat-dots text-cta fs-2"></i>
-          </div>
+          <div class="pb-4" id="contact-icon"><i class="bi bi-chat-dots text-cta fs-2"></i></div>
           <h2 class="text-primary-emphasis">Get in Touch!</h2>
-          <p class="lead text-primary font-monospace">I'm always looking for new opportunities! Whether you have a project idea, or just want to connect, <strong>my inbox is always open.</strong></p>
+          <p class="lead text-primary font-monospace pb-4">I'm always looking for new opportunities! Whether you have a project idea, or just want to connect, <strong>my inbox is always open.</strong></p>
           <a href="mailto:rebeccaldaggett@gmail.com">
-            <button class="btn btn-cta m-4" type="email"><i class="bi bi-envelope fs-3 text-stone"></i></button>
+            <button class="btn btn-cta px-3 grow rounded-circle" type="email"><i class="bi bi-envelope fs-2 text-stone"></i></button>
           </a>
         </div>
-
-
       </div>
     </section>
 
     <!--Footer-->
     <div class="container-fluid bg-powder position-absolute mt-5">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-sky">
+      <p class=" text-center text-stone font-monospace pt-4">This site was built by <a href="#intro" class="text-stone">me</a>, using <a href="https://getbootstrap.com/" class="text-stone">Bootstrap5</a>.</p>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 border-top border-stone">
         <p class="col-md-4 mb-0 text-light fs-6">© 2023 Rebecca L. Daggett</p>
-        <a href="#intro" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0">
+        <a href="#intro" class="col-md-4 grow d-flex align-items-center justify-content-center mb-3 mb-md-0">
           <img src="assets/minilogo.png" alt="Logo" id="flower-logo" class="img-fluid" style="width: 3rem">
         </a>
         <ul class="nav col-md-4 justify-content-end">
