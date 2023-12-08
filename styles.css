@@ -19,6 +19,12 @@ body {
 
 /* Animations */
 
+#ga-sticker {
+
+  right: 3rem;
+  top: -14rem;
+
+}
 
 .card-img-top {
   width: 100%;
